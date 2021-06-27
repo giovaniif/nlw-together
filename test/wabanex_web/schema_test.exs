@@ -30,4 +30,30 @@ defmodule WabanexWeb.SchemaTest do
       assert expected_result == response
     end
   end
+
+  describe "users mutations" do
+    test "when all params are valid, create the user", %{conn: conn} do
+      mutation = """
+        mutation {
+          createUser(input: {
+            name: "Giovani",
+            email: "giovani@adopets.org",
+            password: "123456"
+          }) {
+            name
+            email
+          }
+        }
+      """
+
+      response =
+        conn
+        |> post("/api/graphql", %{query: mutation})
+        |> json_response(:ok)
+
+      expected_result = %{"data" => %{"createUser" => %{"email" => "giovani@adopets.org", "name" => "Giovani"}}}
+
+      assert expected_result == response
+    end
+  end
 end
