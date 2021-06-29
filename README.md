@@ -1,19 +1,24 @@
 # Wabanex
+*Exercise management app*
 
-To start your Phoenix server:
+## 🪶 About
+This project was created during the **Next Level Week Together**. It is part of a study about the elixir programming language with the phoenix framework. It covers technologies like *Graphql* and *API Testing*
+## 🚀 Techs
+- Elixir (with Phoenix)
+- Graphql
+- Postgres
+## 💾 Running
+To run this project, you need
+- Install [Elixir](https://elixir-lang.org/)
+- Install [Phoenix](https://www.phoenixframework.org/)
+- Create a postgres database called *Wabanex Dev*
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+```bash
+  $ git clone https://github.com/giovaniif/nlw-together
+  $ cd nlw-together
+  $ mix deps.get # Install dependencias
+  $ mix ecto.setup # Run migrations
+  $ mix phx.server # Start server
+```
+## 🤙 Contact
+Made with 💜 by Giovani Farias. 👋 [Get in touch!](https://www.linkedin.com/in/giovani-ricco-farias-b97316186/)
